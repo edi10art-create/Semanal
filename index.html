@@ -299,7 +299,6 @@ img {
 
 /* --- SEÇÃO APARECIDO --- */
 .aparecido {
-    position: relative;
     width: min(900px, 95vw);
     height: min(900px, 95vw);
     margin: 0 auto;
@@ -311,17 +310,15 @@ img {
 }
 
 .aparecido img {
-    position: absolute;
-
     width: 100%;
     height: 100%;
-
     object-fit: contain;
     object-position: center center;
 
     opacity: 0;
     animation: trocarAparecido 6s infinite;
 }
+
 
 /* Imagem 1 */
 .aparecido img:nth-child(1) {

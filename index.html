@@ -304,27 +304,24 @@ img {
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
 .aparecido img {
-    width: 100%;
+    position: absolute;
+
+    width: auto;
     height: 100%;
 
-    object-fit: contain;
-    object-position: center center;
+    left: 50%;
+    top: 50%;
 
-    transform: scale(2.0);
+    transform: translate(-50%, -50%) scale(2);
     transform-origin: center center;
 
     opacity: 0;
     animation: trocarAparecido 6s infinite;
-
-    }
+}
 
 
 /* Imagem 1 */
